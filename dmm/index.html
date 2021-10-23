@@ -1,15 +1,177 @@
-<html>
-<head>
-<title>Hello</title>
-<style>
+<Style>
 
-</style>
-</head>
+body {
+  /* Typography Declaration */
+  color: #222222;
+  font-size: 1.5em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
 
-<body>
+.masthead-heading,
+.masthead-intro,
+.content-footer {
+  text-align: center;
+}
 
-Hello World
+.masthead {
+  padding: 11em 0;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/1200px-Machu_Picchu%2C_Peru.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  border-top: solid 2em #B69760;
+}
 
-</body>
+.masthead-intro {
+  /* Text Declarations */
+  margin-bottom: 0.1em;
+  font-family: "Gentium Book Basic," Georgia, serif;
+  font-size: 4em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
 
-</html>
+
+.masthead-heading {
+  /*Layout Declarations */
+  margin-top: -0.2em;
+  /* Typography Declarations */
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: light;
+  font-size: 1em;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* Text Declarations for Sections */
+
+.introduction-section > p,
+.location-section > p,
+.content-footer > p,
+.questions-section > p {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+/* Section Styling */
+
+.introduction-section,
+.location-section,
+.questions-section {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+.questions-section > h2 {
+  /*Typography Declarations */
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 1.1 em;
+  font-weight: bold;
+  color: #222222;
+}
+
+/* Footer Styling */
+
+.fa-stack fa-lg {
+  display: inline-block;
+}
+
+.footer-container > p {
+  color: #ffeff3;
+}
+
+.content-footer {
+  padding: 2em 0;
+  margin-top: 3em;
+  background: #2b3840;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:link {
+  color: #B69760;
+}
+
+a:visited {
+  color: #B69760;
+}
+
+a: hover {
+  color: #B69760;
+}
+
+@media only screen and (max-width: 571px) {
+    .masthead {
+        padding: 5em 0;
+    }
+    .masthead-intro {
+        font-size: 3em;
+    }
+    .masthead-heading {
+        font-size: .5em;
+    }
+    .container {
+        padding: 0 3em;
+    }
+    .footer-container {
+        padding: 0 3em;
+  }
+}
+
+</Style>
+
+<header class="masthead">
+  <p class="masthead-intro">David Mejia-Medina</p>
+  <h1 class="masthead-heading">Computer Programmer</h1>
+</header>
+  <section class="introduction-section">
+    <div class="container">
+    <h1>Introduction</h1>
+    <p>Hello! My name is David, and I'm a <strong>programmer</strong>.
+    <p/>
+    
+    <p>I think it's important to help make the internet a <strong>beautiful place</strong>, whether that be through words, photography, or web design.</p>
+    
+    <p>I also think it's important to push yourself and <strong>learn</strong> one new thing every day, no matter what that may be. Did you know a duel between three people is called a <a href="http://www.futilitycloset.com/wp-content/uploads/2010/12/2010-12-16-truel.jpg">truel?</a></p>
+    </div>
+  </section>
+
+  <section class="location-section">
+    <div class="container">
+    <h1>Where I'm From</h1>
+    <p>I call <a href="https://upload.wikimedia.org/wikipedia/commons/2/2a/1855_Colton_Map_of_Wisconsin_-_Geographicus_-_Wisconsin-colton-1855.jpg">Ashburn, Virginia</a> my home, the Old Dominion. My favorite part about <b>Ashburn</b> is that the nature is beautiful! There's a vibrant crowd here that keeps this city bold and <strong>progressive</strong>. 
+    
+ 
+      
+    <p>You can find me going on walks and jogs most mornings, <strong>water bottle</strong> in hand, running along the pathway.</p>
+    </div>
+  </section>
+
+  <section class="questions-section">
+    <div class="container">
+    <h1>More About Me</h1>
+    <h2>What are your favorite hobbies?</h2>
+    <p>I love to explore, spend time with my family, eat pizza, nap, play video games, drink good apple juice</a>, and binge-watching shows.</h2>
+
+    <h2>What's your dream job?</h2>
+    <p> I would love to be a full-time <strong>dog foster</strong> who's given an array of responsibilities in front-end work, and whatever else comes my way.</p>
+
+  </section>
+
+  <footer class="content-footer">
+    <div class="footer-container">
+    <p>Say hi to me on these social networks:</p>
+    
+    <a target="_blank" href="https://github.com/dmejiamedina"><i class="fa fa-github-alt fa-inverse fa-2x"></i></a>
+    &nbsp;
+  
+    <p> David Mejia-Medina</p>
+</div>
+  </footer>
